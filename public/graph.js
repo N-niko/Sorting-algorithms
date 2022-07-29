@@ -15,14 +15,14 @@ class Graph {
       for (let i = 0; i < this.g.length; i++) {
         
         if (s && s == i)
-          fill (140, 30, 20);
+          fill (30, 110, 200);
         else if (p && p == i)
-          fill (30, 20, 140);
+          fill (30, 200, 140);
         else
-          fill (110, 130, 70);
+          fill (150, 150, 170);
         
         noStroke ();
-        rect (i * this.w, height, this.w, -this.g[i]);
+        rect (i * this.w, height, this.w * 0.8, -this.g[i]);
         
       }
       

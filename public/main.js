@@ -10,7 +10,7 @@ let bs;
 let sl1, sl2;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(window.innerWidth * 0.6, window.innerHeight * 0.8);
   
   gr = new Graph ();
   
@@ -21,7 +21,7 @@ function setup() {
 }
 
 function draw() {
-  background(151);
+  background(200, 210, 200);
   
   
   sliderW ();
@@ -44,11 +44,12 @@ function draw() {
 
 function applySlider () {
   sl1 = createSlider(2, maxQ, currQ, 1);
-  sl1.position(10, height + 60);
+  sl1.style('margin-top', '20px');
+  sl1.style('margin-left', window.innerWidth / 2 - 150 + 'px');
   sl1.style('width', '150px');
   
   sl2 = createSlider(1, maxS, currS, 1);
-  sl2.position(210, height + 60);
+  sl2.style('margin-left', '20px');
   sl2.style('width', '150px');
 }
 
